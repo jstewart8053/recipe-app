@@ -1,8 +1,56 @@
-.App,
-div {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  background: #efefef;
   display: flex;
   flex-direction: column;
-  align-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: auto;
+  font-family: "Julius Sans One", sans-serif;
+  background-image: url(dev.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* intro class added for the inital image and the text inside */
+
+.intro > h1 {
+  font-size: 5em;
+  transform: translateX(-320px);
+}
+.intro > h6 {
+  font-size: 2em;
+  transform: translateX(-350px);
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfcfcf;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+.search-button {
+  background-color: #bc1823;
+  border: none;
+  padding: 10px 20px;
+  color: white;
 }
