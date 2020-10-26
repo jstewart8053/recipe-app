@@ -7,7 +7,7 @@ const Recipe = ({ title, calories, image, ingredients, serves, directions }) => 
     return (
         <div className='card'>
             <h1>{title}</h1>
-            <img src={image} alt="" />
+            <img src={image} alt="{title}" />
             <p> {`Total Calories ${Math.floor(calories)}`} </p>
             <ul>
                 {ingredients.map(ingredient => (
@@ -16,7 +16,7 @@ const Recipe = ({ title, calories, image, ingredients, serves, directions }) => 
             </ul>
 
             <a href={directions}
-                target='_blank'>
+                target='_blank' rel="noopener noreferrer">
                 Directions
             </a>
             <p> {`Serves ${serves}`} </p>

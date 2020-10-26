@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Recipe from './Recipe';
 
-//27:20
 const App = () => {
 
   const APP_ID = '3a5f4ed1';
   const APP_KEY = 'fd17e1884cb7290bb0514c046e39c6ce'
 
-  // const exampleReq = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState("")
@@ -23,15 +21,12 @@ const App = () => {
     const data = await response.json();
     // set hits to 9 in order to have 3 results on each row
     data.hits.length = 9;
-
     setRecipes(data.hits)
     console.log(data.hits)
-
   }
 
   const updateSearch = e => {
     setSearch(e.target.value)
-
   }
 
   const getSearch = e => {
@@ -54,10 +49,13 @@ const App = () => {
           value={search}
           onChange={updateSearch}
         />
+
         <button className="search-button" type="submit">
           Search
         </button>
+
       </form>
+
       <div class='recipes'>
         {recipes.map(recipe => (
           <Recipe
