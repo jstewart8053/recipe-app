@@ -8,7 +8,7 @@ const Recipe = ({ title, calories, image, ingredients, serves, directions }) => 
         <div className='card'>
             <h1>{title}</h1>
             <img src={image} alt="{title}" />
-            <p> {`Total Calories ${Math.floor(calories)}`} </p>
+            <h6> {`Total Calories ${Math.floor(calories)}`} </h6>
             <ul>
                 {ingredients.map(ingredient => (
                     <li key={ingredient.calories}>{ingredient.text} </li>
@@ -19,7 +19,7 @@ const Recipe = ({ title, calories, image, ingredients, serves, directions }) => 
                 target='_blank' rel="noopener noreferrer">
                 Directions
             </a>
-            <p> {`Serves ${serves}`} </p>
+            <p className='serve'> {`Serves ${serves}`} </p>
 
 
         </div>

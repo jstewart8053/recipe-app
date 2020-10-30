@@ -47,10 +47,12 @@
   width: 50%;
   border: none;
   padding: 10px;
+  height: 40px;
 }
 .search-button {
   background-color: #bc1823;
   border: none;
   padding: 10px 20px;
   color: white;
+  font-size: 18px;
 }
