@@ -2,11 +2,13 @@ import React from 'react';
 import './Recipe.css';
 
 const Recipe = ({ title, calories, image, ingredients, serves, directions }) => {
-    console.log(title)
+
 
     return (
         <div className='card'>
-            <h1>{title}</h1>
+            <div className="bg">
+                <h1>{title}</h1>
+            </div>
             <img src={image} alt="{title}" />
             <h6> {`Total Calories ${Math.floor(calories)}`} </h6>
             <ul>
