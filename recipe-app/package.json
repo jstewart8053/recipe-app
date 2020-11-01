@@ -1,6 +1,5 @@
 {
   "name": "recipe-app",
-    "homepage": "https://jstewart8053.github.io/recipe-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
