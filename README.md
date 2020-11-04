@@ -1,4 +1,5 @@
-# Recipe-app
+# This app has a new home and title... you can now find the new repo at https://github.com/jstewart8053/dev-diet 
+## Recipe-app
 
 ## To run app, clone download, and cd into recipe-app/recipe-app, run 'npm install'
 
